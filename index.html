@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TaskFlow</title>
 </head>
 <body>
-    
+    <header>
+        <a href="index.html">TaskFlow</a>
+    </header>
+    <main>
+        <h1>Quadro de tarefas</h1>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Todas as tarefas</a></li>
+                    <li><a href="#">Calendário</a></li>
+                    <li><a href="#">Prioridades</a></li>
+                    <li><a href="#">Concluídas</a></li>
+                    <li><a href="#">Configurações</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            <h2>A fazer</h2>
+            <button type="button">+ Nova tarefa</button>
+            <article>
+                <h3>Exemplo de tarefa</h3>
+                <p>Alguma tarefa</p>
+                <dl>
+                    <dt>Prioridade</dt>
+                    <dd><data value="low">Baixa</data></dd>
+
+                    <dt>Prazo</dt>
+                    <dd><time datetime="2027-03-25">25 de março de 2027</time></dd>
+                </dl>
+            </article>
+        </section>
+
+        <section>
+            <h2>Em andamento</h2>
+            <button type="button">+ Nova tarefa</button>
+            <article>
+                <h3>Tarefa 2</h3>
+                <p>Alguma outra tarefa importante</p>
+                <dl>
+                    <dt>Prioridade</dt>
+                    <dd><data value="medium">Média</data></dd>
+
+                    <dt>Prazo</dt>
+                    <dd><time datetime="2026-12-20">20 de dezembro</time></dd>
+                </dl>
+            </article>
+        </section>
+        <section>
+            <h2>Em revisão</h2>
+            <button type="button">+ Nova tarefa</button>
+            <article>
+                <h3>Tarefa 3</h3>
+                <p>Tarefa 3 super importante</p>
+                <dl>
+                    <dt>Prioridade</dt>
+                    <dd><data value="high">alta</data></dd>
+
+                    <dt>Prazo</dt>
+                    <dd><time datetime="2026-09-25">25 de setembro</time></dd>
+                </dl>
+            </article>
+        </section>
+        <section>
+            <h2>Concluído</h2>
+            <button type="button">+ Nova tarefa</button>
+            <article>
+                <h3>Tarefa tal</h3>
+                <p>Alguma tarefa importante que foi concluída</p>
+                <dl>
+                    <dt>Prioridade</dt>
+                    <dd><data value="high">Alta</data></dd>
+
+                    <dt>Prazo</dt>
+                    <dd><time datetime="2026-09-21">21 de setembro</time></dd>
+                </dl>
+            </article>
+
+        </section>
+    </main>
 </body>
 </html>
