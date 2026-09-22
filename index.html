@@ -12,7 +12,7 @@
     <main>
         <h1>Quadro de tarefas</h1>
         <aside>
-            <nav>
+            <nav aria-label="Navegação principal">
                 <ul>
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#">Projetos</a></li>
@@ -26,7 +26,7 @@
         </aside>
         <section>
             <h2>A fazer</h2>
-            <button type="button">+ Nova tarefa</button>
+            <button type="button" aria-label="Nova tarefa em A fazer">+ Nova tarefa</button>
             <article>
                 <h3>Exemplo de tarefa</h3>
                 <p>Alguma tarefa</p>
@@ -42,7 +42,7 @@
 
         <section>
             <h2>Em andamento</h2>
-            <button type="button">+ Nova tarefa</button>
+            <button type="button" aria-label="Nova tarefa em andamento">+ Nova tarefa</button>
             <article>
                 <h3>Tarefa 2</h3>
                 <p>Alguma outra tarefa importante</p>
@@ -57,13 +57,13 @@
         </section>
         <section>
             <h2>Em revisão</h2>
-            <button type="button">+ Nova tarefa</button>
+            <button type="button" aria-label="Nova tarefa em Revisão">+ Nova tarefa</button>
             <article>
                 <h3>Tarefa 3</h3>
                 <p>Tarefa 3 super importante</p>
                 <dl>
                     <dt>Prioridade</dt>
-                    <dd><data value="high">alta</data></dd>
+                    <dd><data value="high">Alta</data></dd>
 
                     <dt>Prazo</dt>
                     <dd><time datetime="2026-09-25">25 de setembro</time></dd>
@@ -72,7 +72,7 @@
         </section>
         <section>
             <h2>Concluído</h2>
-            <button type="button">+ Nova tarefa</button>
+            <button type="button" aria-label="Nova tarefa em Concluído">+ Nova tarefa</button>
             <article>
                 <h3>Tarefa tal</h3>
                 <p>Alguma tarefa importante que foi concluída</p>
@@ -88,10 +88,10 @@
         </section>
     </main>
 
-    <dialog id="new-task-dialog">
+    <dialog id="new-task-dialog" aria-labelledby="new-task-title">
         <form id="new-task-form">
 
-            <h2>Nova tarefa</h2>
+            <h2 id="new-task-title">Nova tarefa</h2>
             <label for="titulo">Título</label>
             <input type="text" name="titulo" id="titulo" required>
 
